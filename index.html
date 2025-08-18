@@ -17,36 +17,59 @@
 
 <body>
     <header>
-        <nav class="nav navbar-expand-sm position-fixed fixed-top">
+        <nav class="nav navbar-expand-sm position-fixed fixed-top bg-dark">
             <div class="container">
-                <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#nav-collapse"
-                    aria-label="navigation Toggler">
-                    <span class="navbar-toggler-icon"></span>
+                <button type="button" class="navbar-toggler float-end mt-3" data-bs-toggle="offcanvas" data-bs-target="#nav-collapse"
+                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars text-white"></i>
                 </button>
-                <div id="nav-collapse" class="collapse navbar-collapse justify-content-center">
-                    <div id="nav-collapse" class="offcanvas offcanvas-start" data-bs-scroll="true">
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a href="" class="nav-link nav-active" aria-current="page"
-                                        aria-label="Ative Page">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">resume</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">about</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="collapse navbar-collapse justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="" class="nav-link nav-active" aria-current="page"
+                                aria-label="Ative Page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">contact</a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
+            <div id="nav-collapse" class="offcanvas offcanvas-start collapse bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title text-white" id="offcanvasScrollingLabel">Logo</h5>
+    <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="" class="nav-link nav-active" aria-current="page"
+                                aria-label="Ative Page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">contact</a>
+                        </li>
+                    </ul>
+  </div>
+</div>
         </nav>
     </header>
     </div>
@@ -365,77 +388,96 @@
                     <h3 class="text-center"><span class="fw-light">Blog on</span> Medium</h3>
                 </div>
                 <div class="blog-content mt-5">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="card bg-grey">
-                                <img src="./images/blog-image-1.png" alt="blog-image-1"
-                                    class="img-fluid w-100 d-block h-100">
-                                <div class="card-body p-4">
-                                    <h6 class="blog-card-heading text-white fw-light mb-2">
-                                        Creative Product Designer From Facebook
-                                    </h6>
-                                    <p class="text-dark">
-                                        Even the all-powerful Pointing has no control about the blind texts it is an
-                                        almost
-                                        unorthographic.
-                                    </p>
-                                    <span class="me-3">
-                                        <i class="fa-solid fa-calendar-days me-1"></i>
-                                        <span class="text-dark">Aug 7, 2018</span>
-                                    </span>
-                                    <span class="">
-                                        <i class="fa-solid fa-comments me-1"></i>
-                                        <span class="text-dark">5 Comments</span>
-                                    </span>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div id="blog-carousel" class="carousel">
+                                <div class="carousel-indicators top-100 mt-3">
+                                    <button type="button" data-bs-target="#blog-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#blog-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#blog-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="card bg-grey">
-                                <img src="./images/blog-image-2.png" alt="blog-image-2"
-                                    class="img-fluid w-100 d-block h-100">
-                                <div class="card-body p-4">
-                                    <h6 class="blog-card-heading text-white fw-light mb-2">
-                                        Creative Product Designer From Facebook
-                                    </h6>
-                                    <p class="text-dark">
-                                        Even the all-powerful Pointing has no control about the blind texts it is an
-                                        almost
-                                        unorthographic.
-                                    </p>
-                                    <span class="me-3">
-                                        <i class="fa-solid fa-calendar-days me-1"></i>
-                                        <span class="text-dark">Aug 7, 2018</span>
-                                    </span>
-                                    <span class="">
-                                        <i class="fa-solid fa-comments me-1"></i>
-                                        <span class="text-dark">5 Comments</span>
-                                    </span>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item">
+                                        <div class="card bg-grey">
+                                        <img src="./images/blog-image-1.png" alt="blog-image-1"
+                                            class="img-fluid w-100 d-block h-100">
+                                        <div class="card-body p-4">
+                                            <h6 class="blog-card-heading text-white fw-light mb-2">
+                                                Creative Product Designer From Facebook
+                                            </h6>
+                                            <p class="text-dark">
+                                                Even the all-powerful Pointing has no control about the blind texts it is an
+                                                almost
+                                                unorthographic.
+                                            </p>
+                                            <span class="me-3">
+                                                <i class="fa-solid fa-calendar-days me-1"></i>
+                                                <span class="text-dark">Aug 7, 2018</span>
+                                            </span>
+                                            <span class="">
+                                                <i class="fa-solid fa-comments me-1"></i>
+                                                <span class="text-dark">5 Comments</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card bg-grey">
+                                        <img src="./images/blog-image-2.png" alt="blog-image-2"
+                                            class="img-fluid w-100 d-block h-100">
+                                        <div class="card-body p-4">
+                                            <h6 class="blog-card-heading text-white fw-light mb-2">
+                                                Creative Product Designer From Facebook
+                                            </h6>
+                                            <p class="text-dark">
+                                                Even the all-powerful Pointing has no control about the blind texts it is an
+                                                almost
+                                                unorthographic.
+                                            </p>
+                                            <span class="me-3">
+                                                <i class="fa-solid fa-calendar-days me-1"></i>
+                                                <span class="text-dark">Aug 7, 2018</span>
+                                            </span>
+                                            <span class="">
+                                                <i class="fa-solid fa-comments me-1"></i>
+                                                <span class="text-dark">5 Comments</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <div class="card bg-grey">
+                                        <img src="./images/blog-image-3.png" alt="blog-image-3"
+                                            class="img-fluid w-100 d-block h-100">
+                                        <div class="card-body p-4">
+                                            <h6 class="blog-card-heading text-white fw-light mb-2">
+                                                Creative Product Designer From Facebook
+                                            </h6>
+                                            <p class="text-dark">
+                                                Even the all-powerful Pointing has no control about the blind texts it is an
+                                                almost
+                                                unorthographic.
+                                            </p>
+                                            <span class="me-3">
+                                                <i class="fa-solid fa-calendar-days me-1"></i>
+                                                <span class="text-dark">Aug 7, 2018</span>
+                                            </span>
+                                            <span class="">
+                                                <i class="fa-solid fa-comments me-1"></i>
+                                                <span class="text-dark">5 Comments</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="card bg-grey">
-                                <img src="./images/blog-image-3.png" alt="blog-image-3"
-                                    class="img-fluid w-100 d-block h-100">
-                                <div class="card-body p-4">
-                                    <h6 class="blog-card-heading text-white fw-light mb-2">
-                                        Creative Product Designer From Facebook
-                                    </h6>
-                                    <p class="text-dark">
-                                        Even the all-powerful Pointing has no control about the blind texts it is an
-                                        almost
-                                        unorthographic.
-                                    </p>
-                                    <span class="me-3">
-                                        <i class="fa-solid fa-calendar-days me-1"></i>
-                                        <span class="text-dark">Aug 7, 2018</span>
-                                    </span>
-                                    <span class="">
-                                        <i class="fa-solid fa-comments me-1"></i>
-                                        <span class="text-dark">5 Comments</span>
-                                    </span>
-                                </div>
+                                <button class="carousel-control-prev start-0" type="button" data-bs-target="#blog-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+<button class="carousel-control-next end-0" type="button" data-bs-target="#blog-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
                             </div>
                         </div>
                     </div>
@@ -444,21 +486,150 @@
         </section>
         <!-- Blog Section Ends -->
 
-        <div class="divider blog-contact-divider"></div>
+        <div class="divider blog-FAQ-divider"></div>
+|
+        <!-- FAQ Section Starts -->
+       <section class="question">
+        <div class="container">
+          <div class="question-header">
+            <h2 class="text-center my-3 fw-bold">
+              Frequent questions
+            </h2>
+          </div>
+          <div class="question-content mt-5">
+            <div id="question-accordin" class="accordion">
+              <div class="accordion-item mb-4 border-0">
+                <h2 class="accordion-header">
+                  <button type="button" class="accordion-button bg-grey border-0" data-bs-toggle="collapse"  style="box-shadow: none;"data-bs-target="#questions-1-accordin-collapse" aria-controls="collapse">
+                  How can I contact you and quickly get a quote for my online project?
+                </button>
+                </h2>
+                <div id="questions-1-accordin-collapse" class="accordion-collapse collapse" data-bs-parent="#question-accordin">
+                  <div class="accordion-body">
+                    <p class="">The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-4 border-0">
+                <h2 class="accordion-header">
+                  <button type="button" class="accordion-button bg-grey border-0" data-bs-toggle="collapse"  style="box-shadow: none;"data-bs-target="#questions-2-accordin-collapse" aria-controls="collapse">
+                  Do you create designs from the ground up or you are using themes?
+                </button>
+                </h2>
+                <div id="questions-2-accordin-collapse" class="accordion-collapse collapse" data-bs-parent="#question-accordin">
+                  <div class="accordion-body">
+                    <p class="">The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-4 border-0">
+                <h2 class="accordion-header">
+                  <button type="button" class="accordion-button bg-grey border-0" data-bs-toggle="collapse"  style="box-shadow: none;"data-bs-target="#questions-3-accordin-collapse" aria-controls="collapse">
+                  Will I receive any included maintenance or warranty after project delivery?
+                </button>
+                </h2>
+                <div id="questions-3-accordin-collapse" class="accordion-collapse collapse" data-bs-parent="#question-accordin">
+                  <div class="accordion-body">
+                    <p class="">The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-4 border-0">
+                <h2 class="accordion-header">
+                  <button type="button" class="accordion-button bg-grey border-0" data-bs-toggle="collapse"  style="box-shadow: none;"data-bs-target="#questions-4-accordin-collapse" aria-controls="collapse">
+                  If something goes wrong with the project can I have my money back?
+                </button>
+                </h2>
+                <div id="questions-4-accordin-collapse" class="accordion-collapse collapse" data-bs-parent="#question-accordin">
+                  <div class="accordion-body">
+                    <p class="">The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-4 border-0">
+                <h2 class="accordion-header">
+                  <button type="button" class="accordion-button bg-grey border-0" data-bs-toggle="collapse"  style="box-shadow: none;"data-bs-target="#questions-5-accordin-collapse" aria-controls="collapse">
+                  What's your preferred method of payment and do you need an advance?
+                </button>
+                </h2>
+                <div id="questions-5-accordin-collapse" class="accordion-collapse collapse" data-bs-parent="#question-accordin">
+                  <div class="accordion-body">
+                    <p class="">The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+      <!-- FAQ Section Ends -->
 
-        <!-- Contact Section Starts -->
+      <div class="divider FAQ-contact-divider"></div>
+
+       <!-- Contact Section Starts -->
         <section class="contact">
-            <div class="conatct-header">
+            <div class="container">
+                <div class="conatct-header">
                 <h3 class="text-center"><span class="fw-light">Get</span> In Touch</h3>
             </div>
-            <div class="contact-content">
+            <div class="contact-content mt-5">
                 <div class="row">
                     <div class="col-md-6">
-                        <h4 class="fw-light">Get In Touch</h4>
+                        <h4 class="fw-light mb-5">Get In Touch</h4>
+                        <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="bg-grey text-dark text-capitalize fw-semibold border-0 mb-3 py-2 px-3 w-100" placeholder="Your Name" name="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="bg-grey text-dark text-capitalize fw-semibold border-0 mb-3 py-2 px-3 w-100" placeholder="Your Email" name="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="bg-grey text-dark text-capitalize fw-semibold border-0 mb-3 py-2 px-3 w-100" placeholder="Your Numbar" name="Email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="bg-grey text-dark text-capitalize fw-semibold border-0 mb-3 py-3 px-3 w-100" placeholder="Massage" rows="6" id="comment"
+                                        name="Write a Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn bg-green rounded-pill text-uppercase text-white py-2 px-4 mt-5">send message</button>
+                            </form>
+                    </div>
+                    <div class="col-md-6 ps-5">
+                        <h4 class="fw-light mb-5 text-capitalize">my contact deatils</h4>
+                        <ul class="contact-list list-unstyled">
+                            <li class="contact-list-item">
+                                <a href="" class="contact-list-link">
+                                    <h6 class="text-uppercase mb-2 text-green fw-bold">Email</h6>
+                                    <a class="text-decoration-none text-grey" href="mailto:shivambhadoriya1605@gmail.com">shivambhadoriya1605@gmail.com</a>
+                                </a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="" class="contact-list-link">
+                                    <h6 class="text-uppercase mb-2 text-green fw-bold">phone</h6>
+                                    <a class="text-decoration-none text-grey" href="">+91 9106988376</a>
+                                </a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="" class="contact-list-link">
+                                    <h6 class="text-uppercase mb-2 text-green fw-bold">fax</h6>
+                                    <a class="text-decoration-none text-grey" href="">+30 976892345</a>
+                                </a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="" class="contact-list-link">
+                                    <h6 class="text-uppercase mb-2 text-green fw-bold">Address</h6>
+                                    <a class="text-decoration-none text-grey d-block" href="">Surat, Gujarat</a>
+                                    <a class="text-decoration-none text-grey d-block mb-0 pb-0" href="">4th Floor8 Lower</a>
+                                    <a class="text-decoration-none text-grey d-block pt-0" href="">Surat , Gujarat M1 50F</a>
+                                </a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-outline-danger text-tranform-uppercase mx-2"
+                            data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
                     </div>
                 </div>
             </div>
-        </section>>
+            </div>
+        </section>
         <!-- Contact Section Ends -->
     </main>
     <footer>
@@ -502,6 +673,53 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                        <h1 class="fw-bold mb-0 fs-2">Login</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="modal-body p-5 pt-0">
+                        <form class="">
+                            <div class="form-floating mb-3"> <input type="email" class="form-control rounded-3"
+                                    id="floatingInput" placeholder="name@example.com"> <label for="floatingInput">Email
+                                    address</label> </div>
+                            <div class="form-floating mb-3"> <input type="password" class="form-control rounded-3"
+                                    id="floatingPassword" placeholder="Password"> <label
+                                    for="floatingPassword">Password</label>
+                            </div> <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign
+                                up</button> <small class="text-body-secondary">By clicking Login, you agree to the
+                                terms of use.</small>
+                            <hr class="my-4">
+                            <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2> <button
+                                class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit"> <svg
+                                    class="bi me-1" width="16" height="16" aria-hidden="true">
+                                    <use xlink:href="#google"></use>
+                                </svg>
+                                Login with Google
+                            </button> <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                                <svg class="bi me-1" width="16" height="16" aria-hidden="true">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                                Login with Facebook
+                            </button> <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                                <svg class="bi me-1" width="16" height="16" aria-hidden="true">
+                                    <use xlink:href="#github"></use>
+                                </svg>
+                                Login with GitHub
+                            </button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="./javascript/bootstrap.bundle.min.js" type="text/javascript"></script>
 </body>
