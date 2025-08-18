@@ -1,0 +1,131 @@
+:root {
+  --theme-white: #ffffff;
+  --theme-grey: #4c4b4b;
+  --theme-dark: #222222;
+  --theme-green: #b2c251;
+}
+
+/* Text-Classes Starts */
+.text-grey {
+  color: var(--theme-grey);
+}
+.text-darks {
+  color: var(--theme-dark);
+}
+.text-green {
+  color: var(--theme-green);
+}
+/* Text-Classes Ends */
+
+/* Bg color classes Starts */
+.bg-grey {
+  background: var(--theme-grey);
+}
+.bg-darks {
+  background: var(--theme-dark);
+}
+.bg-green {
+  background: var(--theme-green);
+}
+/* Bg color classes Ends */
+
+.divider {
+  height: 100px;
+}
+
+html body
+{
+  color: var(--theme-white);
+  background: var(--theme-dark);
+}
+
+/* Navigation Starts */
+.nav-item {
+  padding: 1rem 1.5rem;
+}
+.nav-link {
+  text-transform: uppercase;
+  /* color: var(--theme-white); */
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--theme-dark);
+}
+/* Navigation Ends */
+
+/* Hero Section Starts */
+.hero {
+  height: 100vh;
+  background-image: url(../images/hero.bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+.hero .hero-content
+{
+  background: rgba(0, 0, 0 , 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* Hero Section Ends */
+
+/* Portfolio Section Starts */
+.portfolio .portfolio-content .portfolio-list
+{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.portfolio .portfolio-content .portfolio-list .portfolio-item 
+{
+  padding: 1.3rem;
+}
+.portfolio .portfolio-content .portfolio-list .portfolio-item .portfolio-link
+{
+  text-decoration: none;
+  color: var(--theme-grey);
+  text-transform: capitalize;
+  transition: all .4s ease;
+}
+.portfolio-item:hover .portfolio-link
+{
+  color: var(--theme-green) !important;
+}
+.portfolio-active
+{
+  color: var(--theme-green) !important;
+}
+/* Portfolio Section Ends */
+
+/* Blog Section Starts */
+.blog-card-heading
+{
+  transition: all .5s ease;
+}
+.blog-card-heading:hover
+{
+  color: var(--theme-green) !important;
+}
+/* Blog Section Ends */
+
+/* Footer Section Starts */
+footer
+{
+  padding-top: 5rem;
+}
+.social-icons
+{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.social-icons li
+{
+  border-radius: 50%;
+  border: 1px solid var(--theme-grey);
+  padding: 1rem 1.3rem;
+  margin: 0 .5rem;
+}
+/* Footer Section Ends */
